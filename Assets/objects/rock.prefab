@@ -126,9 +126,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 2.5
+  m_AngularDrag: 0.6
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -173,3 +173,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324a2384d0809b94b980fbae4d5f4f76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rbr: {fileID: 1588188089414234892}
+  player: {fileID: 5048881512864563182, guid: c92e7c0d546c072479ba3339c7f33413, type: 3}

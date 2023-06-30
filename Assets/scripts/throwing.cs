@@ -6,9 +6,11 @@ public class throwing : MonoBehaviour
 {
     public Transform throwPoint;
     public GameObject squarePrefab;
-    public float throwForce = 20f;
-    public float cooldown = 0.4f;
+    public float throwForce = 200f;
+    public float cooldown = 2f;
     private float nextThrowTime = 0;
+    public GameObject trig;
+    rockTrigger tr;
 
     // Update is called once per frame
     void Update()
@@ -17,9 +19,16 @@ public class throwing : MonoBehaviour
         {
             if(Time.time > nextThrowTime)
             {
-                Shoot();
+                if(tr.trigger == false)
+                {
+                    Shoot();
+                }
             }
         }
+    }
+    void Awake()
+    {
+        tr = trig.GetComponent<rockTrigger>();
     }
     void Shoot()
     {

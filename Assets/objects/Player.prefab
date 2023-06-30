@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throwPoint: {fileID: 5048881512849298668}
   squarePrefab: {fileID: 1270296081509953888, guid: dc3c2b8e0e47dc74d941cd99c4e8c5f8, type: 3}
-  throwForce: 10
+  throwForce: 100
   cooldown: 2
 --- !u!1 &5048881513350136830
 GameObject:
